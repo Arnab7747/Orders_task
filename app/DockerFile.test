@@ -1,0 +1,14 @@
+
+FROM python:3.8-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+
+COPY . /app
+
+
+RUN pip install --no-cache-dir pandas
+
+# Run the tests when the container launches
+CMD ["python", "-m", "unittest", "discover"]
