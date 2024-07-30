@@ -14,8 +14,7 @@ To run the main application:
 
 ```sh
 cd app
-./run_app.sh
+Login in Docker 
 
-
-To run the tests:
-./run_tests.sh
+To run tast: docker run --rm order-task 
+To run test: docker run --rm order-tests
